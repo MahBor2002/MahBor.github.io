@@ -11,7 +11,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	background-color: rgba(24, 16, 66, 0.205);
+	background-color: rgba(8, 5, 26, 0.205);
 }
 
 .nav ul {
@@ -439,4 +439,42 @@ input[type="submit"]:hover {
 	color: #333;
 	text-align: center;
 	font-size: 1.3em;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td,
+th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #d4d4d4;
+}
+
+.last-update-p {
+	font-size: 0.7em;
+}
+
+.cons-oops-text {
+	font-size: 3em;
+	text-align: center;
+	color: #333;
+}
+
+.cons-p {
+	font-size: 2em;
+	color: #333;
+}
+
+.cons-page-text {
+	font-size: 4em;
+	text-align: center;
+	color: #333;
 }

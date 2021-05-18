@@ -10,10 +10,19 @@ if (document.readyState == "loading") {
 }
 
 function Ready() {
-	document.getElementsByClassName("submitBtn")[0].addEventListener("click", submitClicked);
-
+	lastUpdated();
+	document
+		.getElementsByClassName("submitBtn")[0]
+		.addEventListener("click", submitClicked);
 }
 
 function submitClicked() {
 	alert("Your message has been sent.");
+}
+
+function lastUpdated() {
+	let pageUpdated = new Date(document.lastModified);
+
+	document.getElementById("last-updated-p").innerHTML =
+		"Page last updated: " + pageUpdated;
 }
