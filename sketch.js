@@ -11,9 +11,7 @@ if (document.readyState == "loading") {
 
 function Ready() {
 	lastUpdated();
-	document
-		.getElementsByClassName("submitBtn")[0]
-		.addEventListener("click", submitClicked);
+	document.getElementsByClassName("submitBtn")[0].addEventListener("click", submitClicked);
 }
 
 function submitClicked() {
@@ -23,6 +21,5 @@ function submitClicked() {
 function lastUpdated() {
 	let pageUpdated = new Date(document.lastModified);
 
-	document.getElementById("last-updated-p").innerHTML =
-		"Page last updated: " + pageUpdated;
+	document.getElementById("last-updated-p").innerHTML = "Page last updated: " + pageUpdated;
 }
