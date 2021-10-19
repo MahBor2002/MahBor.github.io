@@ -478,3 +478,7 @@ tr:nth-child(even) {
 	text-align: center;
 	color: #333;
 }
+
+.excuse-p {
+	font-size: 20px;
+}
